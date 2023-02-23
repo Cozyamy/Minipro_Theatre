@@ -539,7 +539,7 @@
 }
 
 .secondmain_section {
-	background-image: url('../images/About us.svg');
+	background-image: url('.././images/About us.svg');
 }
 
 .secondmain_section article {
@@ -605,7 +605,7 @@
 }
 
 .fourthmain_section {
-	background-image: url('../images/faq.svg');
+	background-image: url('.././images/faq.svg');
 }
 
 .fourthmain_section article {
@@ -697,7 +697,7 @@
 }
 
 .sixthmain_section {
-	background-image: url('../images/contact us.svg');
+	background-image: url('.././images/contact us.svg');
 }
 
 .sixthmain_section article {
