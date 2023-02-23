@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/Frames 1.png">
+	<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Minipro Theatre</title>
+</head>
+<body class="signup_body">
+	<header>
+		<div>
+			<nav class="signup_nav navbar">
+				<li>
+					<img class="nav-branding" src="./images/Frame 1.png">
+				</li>
+				<ul class="menu nav-menu">
+					<li class="nav-item"><a class="menuItem nav-link " href="#">NOW SHOWING</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">ABOUT US</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">SERVICES</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">CONTACT US</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">FAQ</a></li>
+					<li class="nav_button nav-item">
+						<a href="#">SIGN IN</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			</nav>
+		</div>
+	</header>
+	<main class="verify_main">
+		<form>
+			<input type="text" name="name" placeholder="Business Name" required>
+			<input type="text" name="contact" placeholder="Address" required>
+			<input type="text" name="number" placeholder="CAC Reg Number" required>
+			<input type="text" name="email" placeholder="Email" required>
+			<input type="text" name="PhoneNumber" placeholder="Phone Number" required>
+			<input type="text" name="code" placeholder="License Code" required>
+			<div class="location">
+				<div>
+					<label for="state">Select State</label>
+					<select onchange="toggleLGA(this);" name="state" id="state">
+						<option value="" selected="selected">- Select -</option>
+						<option value="Abia">Abia</option>
+						<option value="Adamawa">Adamawa</option>
+						<option value="Akwa Ibom">Akwa Ibom</option>
+						<option value="Anambra">Anambra</option>
+						<option value="Bauchi">Bauchi</option>
+						<option value="Bayelsa">Bayelsa</option>
+						<option value="Benue">Benue</option>
+						<option value="Borno">Borno</option>
+						<option value="Cross River">Cross River</option>
+						<option value="Delta">Delta</option>
+						<option value="Ebonyi">Ebonyi</option>
+						<option value="Edo">Edo</option>
+						<option value="Ekiti">Ekiti</option>
+						<option value="Enugu">Enugu</option>
+						<option value="FCT">FCT</option>
+						<option value="Gombe">Gombe</option>
+						<option value="Imo">Imo</option>
+						<option value="Jigawa">Jigawa</option>
+						<option value="Kaduna">Kaduna</option>
+						<option value="Kano">Kano</option>
+						<option value="Kastina">Kastina</option>
+						<option value="Kebbi">Kebbi</option>
+						<option value="Kogi">Kogi</option>
+						<option value="Kwara">Kwara</option>
+						<option value="Lagos">Lagos</option>
+						<option value="Nasarawa">Nasarawa</option>
+						<option value="Niger">Niger</option>
+						<option value="Ogun">Ogun</option>
+						<option value="Ondo">Ondo</option>
+						<option value="Osun">Osun</option>
+						<option value="Oyo">Oyo</option>
+						<option value="Plateau">Plateau</option>
+						<option value="Sokoto">Sokoto</option>
+						<option value="Taraba">Taraba</option>
+						<option value="Yobe">Yobe</option>
+						<option value="Zamfara">Zamfara</option>
+					</select>
+				</div>
+				<div>
+					<label for="lga">LGA</label>
+					<select name="lga" id="lga" class="form-control select-lga"></select>
+				</div>
+			</div>
+
+			<button type="submit">submit</button>
+		</form>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="js/lga.min.js"></script>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.
+addEventListener('click', () => {
+	hamburger.classList.remove('active');
+	navMenu.classList.remove('active');
+}))
+	</script>
+</body>
+</html>

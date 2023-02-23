@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/Frames 1.png">
+	<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Minipro Theatre</title>
+</head>
+<body class="signup_body">
+	<header>
+		<div>
+			<nav class="signup_nav navbar">
+				<li>
+					<img class="nav-branding" src="./images/Frame 1.png">
+				</li>
+				<ul class="menu nav-menu">
+					<li class="nav-item"><a class="menuItem nav-link " href="#">NOW SHOWING</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">ABOUT US</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">SERVICES</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">CONTACT US</a></li>
+					<li class="nav-item"><a class="menuItem nav-link" href="#">FAQ</a></li>
+					<li class="nav_button nav-item">
+						<a href="#">SIGN IN</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			</nav>
+		</div>
+	</header>
+	<main class="signup_main">
+		<h1>Admin Signup</h1>
+		<form>
+			<input type="text" name="name" placeholder="Name of Administrator" required>
+			<input type="text" name="name" placeholder="Name of Cinema" required>
+			<input type="text" name="contact" placeholder="Contact Address" required>
+			<input type="text" name="email" placeholder="Email Address" required>
+			<input type="text" name="PhoneNumber" placeholder="Phone Number" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="password" name="password" placeholder="Confirm Password" required>
+			<button type="submit">Register</button>
+		</form>
+	</main>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.
+addEventListener('click', () => {
+	hamburger.classList.remove('active');
+	navMenu.classList.remove('active');
+}))
+	</script>
+</body>
+</html>
