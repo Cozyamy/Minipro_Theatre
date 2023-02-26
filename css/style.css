@@ -108,6 +108,7 @@
 	background-position: center;
 	background-size: cover;
 	text-align: center;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
@@ -303,10 +304,14 @@
 	background-color: #BFCAD2;
 	display: flex;
 	flex-direction: row;
-	width: 30%;
+	width: 370px;
 	border-radius: 20px;
-	padding: 50px;
-	gap: 100px;
+	padding: 40px;
+	gap: 90px;
+}
+
+.register_main img {
+	width: 70%;
 }
 
 .register_main section {
@@ -316,32 +321,14 @@
 	align-items: center;
 }
 
-.register_main button {
+.register_main a {
 	background-color: #080420;
 	border-radius: 12px;
 	border: none;
 	padding: 8px;
 	width: 110px;
 	color: #FFFFFF;
-}
-
-.location {
-	display: flex;
-	flex-direction: row;
-	gap: 30%;
-}
-
-.location div {
-	background-color: #F8F7F7;
-	border: 1px solid 080420;
-	border-radius: 15px;
-	padding: 15px 12px;
-	align-items: space-between;
-	gap: 20px;
-	color: #2F2F2F;
-	display: flex;
-	flex-direction: row;
-	white-space: nowrap;
+	text-align: center;
 }
 
 /*Cinema verification*/
@@ -350,10 +337,11 @@
 	color: #F8F7F7;
 	background-color: #BFCAD2;
 	text-align: center;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
-	width: 40%;
+	width: 50%;
 	border-radius: 40px;
 	border: 2px solid #FFFCFC;
 	padding-left: 120px;
@@ -391,6 +379,26 @@
 	align-self: center;
 
 }
+
+.location {
+	display: flex;
+	flex-direction: row;
+	gap: 20%;
+}
+
+.location div {
+	background-color: #F8F7F7;
+	border: 1px solid 080420;
+	border-radius: 15px;
+	padding: 15px 12px;
+	align-items: space-between;
+	gap: 20px;
+	color: #2F2F2F;
+	display: flex;
+	flex-direction: row;
+	white-space: nowrap;
+}
+
 
 /* forgot password 2 */
 .forgotpassword_left{
