@@ -55,7 +55,7 @@
 				<h2>Now Showing</h2>
 				<div class="container swiper">
       <div class="slide-container">
-        <div class="swiper-button-prev swiper-navBtn pre-btn"></div>
+        <div class="swiper-button-next swiper-navBtn nxt-btn"></div>
         <article class="card-wrapper swiper-wrapper firstmain_flex ">
           <div class="card swiper-slide firstmain_flex_container">
             <div class="">
@@ -107,14 +107,14 @@
           </div>
         </article>
       </div>
-      <div class="swiper-button-next swiper-navBtn nxt-btn"></div>
+      <div class="swiper-button-prev swiper-navBtn pre-btn"></div>
     </div>
 				
 			</section>
 		</section>
 		<section class="secondmain_section" id="section3">
 			<article>
-				<img src="./images/Cinema at home.svg">
+				<img class="about_img" src="./images/Cinema at home.svg">
 				<div>
 					<h3>About Us</h3>
 					<p>Minipro is an online movie ticketing website that allows users to book movie tickets, reserve their seat, order for cinema snacks, watch movie trailers and get updates on new and upcoming movies.</p>
@@ -216,8 +216,8 @@
 		<section class="sixthmain_section" id="section5">
 			<article>
 				<section>
-					<h5 style="font-size: 36px;">Contact Us</h5>
-					<p style="font-size: 24px;">Contact us on any of our social media handles</p>
+					<h5>Contact Us</h5>
+					<p>Contact us on any of our social media handles</p>
 					<div>
 						<a href="#" class="Facebook">
 							<img src="./images/Facebook.svg">
@@ -267,8 +267,8 @@
 	</script>
 	<script>
 		var swiper = new Swiper(".slide-container", {
-  slidesPerView: 3,
-  spaceBetween: 40,
+  slidesPerView: 2,
+  spaceBetween: 10,
   sliderPerGroup: 3,
   loop: true,
   centerSlide: "true",
